@@ -1,5 +1,9 @@
-# NOTE: Versioned bottles are published automatically when a release tag is pushed.
-# Until then, this formula builds from HEAD source.
+# Versioned pre-built binaries are published automatically when a release tag
+# is pushed to semitechnological/wax.  Until a tagged release exists this
+# formula builds from the HEAD source via `brew install --HEAD wax`.
+#
+# After the first release the CI workflow rewrites this file with versioned
+# URLs and SHA256s so `brew install wax` fetches a pre-built binary.
 class Wax < Formula
   desc "Fast Homebrew-compatible package manager"
   homepage "https://github.com/semitechnological/wax"
