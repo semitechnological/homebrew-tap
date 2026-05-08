@@ -12,4 +12,5 @@ brew tap semitechnological/tap
 
 | Formula | Description |
 |---------|-------------|
+| [inauguration](Formula/inauguration.rb) | Swift developer toolchain pipeline CLI |
 | [wax](Formula/wax.rb) | Fast Homebrew-compatible package manager |
