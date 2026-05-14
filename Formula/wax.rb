@@ -1,12 +1,10 @@
-# Versioned pre-built binaries are published automatically when a release tag
-# is pushed to semitechnological/wax.  Until a tagged release exists this
-# formula builds from the HEAD source via `brew install --HEAD wax`.
-#
-# After the first release the CI workflow rewrites this file with versioned
-# URLs and SHA256s so `brew install wax` fetches a pre-built binary.
+# Installs from the tagged source archive. Pre-built release binaries are also
+# published on GitHub for `wax self-update` / tooling that prefers artifacts.
 class Wax < Formula
   desc "Fast Homebrew-compatible package manager"
   homepage "https://github.com/semitechnological/wax"
+  url "https://github.com/semitechnological/wax/archive/refs/tags/v0.17.7.tar.gz"
+  sha256 "6cb9f132aaed90c2ffe2946a85de1edccb4b5f762ed1c84cfabd6cb21ac22960"
   license "MIT"
   head "https://github.com/semitechnological/wax.git", branch: "master"
 
